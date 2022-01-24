@@ -1,5 +1,10 @@
-nav{
+.navbar{
     background: linear-gradient(180deg, rgba(9, 32, 63, 0.95) 0%, rgba(83, 120, 149, 0.95) 100%);
+    position:fixed !important;
+    width: 100%;
+    padding-bottom: 0;
+    background-color: rgba(0,0,0,0) !important;
+    height: 18vh;
     .container-fluid{
         padding-left: 0;
     }
@@ -13,5 +18,6 @@ nav{
         height: 6px;
         background: linear-gradient(180deg, #537895 0%, #09203F 100%);
         width: 100%;
+        align-self:flex-end;
     }
 }
