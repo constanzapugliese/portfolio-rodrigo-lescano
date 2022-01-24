@@ -1,0 +1,17 @@
+nav{
+    background: linear-gradient(180deg, rgba(9, 32, 63, 0.95) 0%, rgba(83, 120, 149, 0.95) 100%);
+    .container-fluid{
+        padding-left: 0;
+    }
+    a{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 31px;
+        margin-left: 10vw;
+    }
+    .navBorder{
+        height: 6px;
+        background: linear-gradient(180deg, #537895 0%, #09203F 100%);
+        width: 100%;
+    }
+}

@@ -1,15 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './Home.scss';
+import Arrow from '../../assets/arrow-down.png';
 
 function Home() {
     return (
-        <section>
-            <h1>Hello! I'm Rodrigo Lescano</h1>
-            <h2>I'm an IT enthusiast based in Buenos Aires, Argentina.</h2>
-            <p>Scroll down and get to know me!</p>
-            <Link to="/about-me">
-                {/*Animación*/}
-            </Link>
+        <section className='sectionHome'>
+            <div className='sectionHome--container'>
+                <h1>HELLO! I'M RODRIGO LESCANO</h1>
+                <h2>I'm an IT enthusiast based in Buenos Aires, Argentina.</h2>
+                <p>Scroll down and get to know me!</p>
+                <Link to="/about-me" className='sectionHome--container__link'>
+                    <img src={Arrow} alt='down' />
+                    {/*Animación*/}
+                </Link>
+            </div>
         </section>
     )
 }

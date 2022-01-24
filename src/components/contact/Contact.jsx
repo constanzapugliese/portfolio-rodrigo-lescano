@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { Container } from 'react-bootstrap';
 
 function Contact() {
     return (
@@ -17,7 +18,7 @@ function Contact() {
             <IoLogoGithub />
             <IoMdMail />
             <h3>Complete the form and I will contact you!</h3>
-            <Form>
+            <Container as={Form}>
                 <Row className="mb-3">
                     <Form.Group as={Col} className="mb-3" controlId="formBasicText">
                         <Form.Label>First Name</Form.Label>
@@ -28,16 +29,22 @@ function Contact() {
                         <Form.Control type="text" size="lg"/>
                     </Form.Group>
                 </Row>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>E-mail</Form.Label>
-                    <Form.Control type="email" size="lg"/>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} size="lg"/>
-                </Form.Group>
-                <Button variant="primary" type="submit">Send</Button>
-            </Form>
+                <Row>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>E-mail</Form.Label>
+                        <Form.Control type="email" size="lg"/>
+                    </Form.Group>
+                </Row>
+                <Row>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" rows={3} size="lg"/>
+                    </Form.Group>
+                </Row>
+                <Row>
+                    <Button variant="primary" type="submit">Send</Button>
+                </Row>
+            </Container>
             <p>Thank you!</p>
             {/* Animación */}
         </section>

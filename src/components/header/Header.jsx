@@ -3,17 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
+import './Header.scss';
 
 function Header() {
     return (
-        <Navbar bg="light" expand={false}>
+        <Navbar bg="dark" expand={false} variant='dark'>
             <Container fluid>
-                <Navbar.Brand href="/">Rodrigo Lescano</Navbar.Brand>
-                <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                <Navbar.Brand href="/">RODRIGO LESCANO</Navbar.Brand>
+                <Navbar.Toggle aria-controls="offcanvasNavbar"/>
                 <Navbar.Offcanvas
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel"
-                placement="end"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                    placement="end"
                 >
                     {/* <Offcanvas.Header closeButton>
                         <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
@@ -30,6 +31,7 @@ function Header() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>
+            <div className='navBorder'></div>
         </Navbar>
     )
 }
