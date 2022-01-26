@@ -21,7 +21,7 @@ function WorkExperience() {
                             <FaMapPin color='white' className='pin'/>
                             <img src={PreventSolutions} alt="Prevent Solution S.A." width='120px'/>
                         </div>
-                        <div className='sectionWorkExp--workExpContainer__title' >
+                        <div className='sectionWorkExp--workExpContainer__title'>
                             <FaMapPin color='#537895'/>
                             <h3>Prevent Solution S.A.</h3>
                         </div>
@@ -31,11 +31,11 @@ function WorkExperience() {
                     <Col className='sectionWorkExp--workExpContainer'>
                         <p>2019 - 2021</p>
                         <img src={Item} alt='linea de tiempo' className='timeLine'/>
-                        <div  >
+                        <div className='sectionWorkExp--workExpContainer__logo'>
                             <FaMapPin color='white' className='pin'/>
                             <img src={Sofrecom} alt="Sofrecom Argentina S.A." width='120px'/>
                         </div>
-                        <div >
+                        <div className='sectionWorkExp--workExpContainer__title'>
                             <FaMapPin color='#537895'/>
                             <h3>Sofrecom Argentina S.A.</h3>
                         </div>
@@ -45,11 +45,11 @@ function WorkExperience() {
                     <Col className='sectionWorkExp--workExpContainer'>
                         <p>2021 - Present</p>
                         <img src={Item} alt='linea de tiempo' className='timeLine'/>
-                        <div  >
+                        <div className='sectionWorkExp--workExpContainer__logo'>
                             <FaMapPin color='white' className='pin'/>
                             <img src={Dxc} alt="DXC Technology" width='120px'/>
                         </div>
-                        <div >
+                        <div className='sectionWorkExp--workExpContainer__title'>
                             <FaMapPin color='#537895'/>
                             <h3>DXC Technology</h3>
                         </div>
