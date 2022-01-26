@@ -17,12 +17,12 @@ function WorkExperience() {
                     <Col className='sectionWorkExp--workExpContainer'>
                         <p>2017 - 2019</p>
                         <img src={FirstItem} alt='linea de tiempo' className='timeLine'/>
-                        <div className='sectionWorkExp--workExpContainer__logo'  >
+                        <div className='sectionWorkExp--workExpContainer__logo'>
                             <FaMapPin color='white' className='pin'/>
                             <img src={PreventSolutions} alt="Prevent Solution S.A." width='120px'/>
                         </div>
                         <div className='sectionWorkExp--workExpContainer__title'>
-                            <FaMapPin color='#537895'/>
+                            <FaMapPin color='#537895' className='pin'/>
                             <h3>Prevent Solution S.A.</h3>
                         </div>
                         <h4>SUPPORT OF NETWORK SYSTEMS - HELP DESK -  APPLICATION SUPPORT</h4>
@@ -36,7 +36,7 @@ function WorkExperience() {
                             <img src={Sofrecom} alt="Sofrecom Argentina S.A." width='120px'/>
                         </div>
                         <div className='sectionWorkExp--workExpContainer__title'>
-                            <FaMapPin color='#537895'/>
+                            <FaMapPin color='#537895' className='pin'/>
                             <h3>Sofrecom Argentina S.A.</h3>
                         </div>
                         <h4>SYSTEM ANALYST AT TELECOM</h4>
@@ -50,7 +50,7 @@ function WorkExperience() {
                             <img src={Dxc} alt="DXC Technology" width='120px'/>
                         </div>
                         <div className='sectionWorkExp--workExpContainer__title'>
-                            <FaMapPin color='#537895'/>
+                            <FaMapPin color='#537895' className='pin'/>
                             <h3>DXC Technology</h3>
                         </div>
                         <h4>UNIX LINUX SYSTEM ADMINISTRATOR</h4>
