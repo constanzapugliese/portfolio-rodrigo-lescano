@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
     return (
-        <section>
+        <section id='projects'>
             <h2>Projects</h2>
             <div>
                 <img src="#" alt=""/>

@@ -1,12 +1,10 @@
 .sectionSkills{
     padding-top: 18vh;
-    background: #F8FBFE;
     text-align: left;
     padding: 22vh 10vw 10vw 10vw;
-    background-image: url('../../assets/skills/bg-image.png');
-    background-repeat: no-repeat;
-    background-position-x: 42vw;
-    background-position-y: 218vh;
+    ::before{
+        background-color: #F8FBFE;
+    }
     h2{
         font-weight: bold;
         font-size: 35px;
