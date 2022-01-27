@@ -1,0 +1,42 @@
+.sectionSkills{
+    padding-top: 18vh;
+    background: #F8FBFE;
+    text-align: left;
+    padding: 22vh 10vw 10vw 10vw;
+    background-image: url('../../assets/skills/bg-image.png');
+    background-repeat: no-repeat;
+    background-position-x: 42vw;
+    background-position-y: 218vh;
+    h2{
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 44px;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #537895;
+        margin: 70px 0 40px 0;
+    }
+    li{
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 26px;
+        margin:20px;
+    }
+    ul{
+        list-style-image: url('../../assets/skills/list.png');
+    }
+    .sectionSkills--technologies{
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .sectionSkills--languages ul, .sectionSkills--aptitudes ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 68%;
+    }
+}

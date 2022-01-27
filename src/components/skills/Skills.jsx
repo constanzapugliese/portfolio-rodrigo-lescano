@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Skills.scss';
 
 function Skills() {
     return (
-        <section>
-            <h2>Skills</h2>
-            <div>
+        <section className='sectionSkills'>
+            <h2>SKILLS</h2>
+            <div className='sectionSkills--technologies'>
                 <h3>Tools and technologies</h3>
                 <ul>
                     <li>HTML</li>
@@ -36,14 +37,14 @@ function Skills() {
                     <li>Microsoft Office (Word, Excel)</li>
                 </ul>
             </div>
-            <div>
+            <div className='sectionSkills--languages'>
                 <h3>Languages</h3>
                 <ul>
                     <li>Spanish</li>
                     <li>English</li>
                 </ul>
             </div>
-            <div>
+            <div className='sectionSkills--aptitudes'>
                 <h3>Aptitudes and knowledges</h3>
                 <ul>
                     <li>Data Analysis</li>
