@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.scss';
+import BgImage from '../../assets/skills/bg-image.png';
 
 function Skills() {
     return (
@@ -58,6 +59,7 @@ function Skills() {
                     <li>Project Management</li>
                 </ul>
             </div>
+            <img src={BgImage} alt='bgImage' />
         </section>
     )
 }

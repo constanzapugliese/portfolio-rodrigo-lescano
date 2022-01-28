@@ -21,10 +21,8 @@ function App() {
       </div>
       <WorkExperience />
       <Education />
-      <div className='backgroundSkills'>
-        <Skills />
-        <Projects />
-      </div>
+      <Skills />
+      <Projects />
       <Contact />
     </div>
   );
