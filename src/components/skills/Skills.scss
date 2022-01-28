@@ -1,9 +1,13 @@
 .sectionSkills{
-    padding-top: 18vh;
     text-align: left;
     padding: 22vh 10vw 10vw 10vw;
-    ::before{
-        background-color: #F8FBFE;
+    background-color: #F8FBFE;
+    position:relative;
+    overflow-x: clip;
+    img{
+        position:absolute;
+        left: 42%;
+        top: 70.5%
     }
     h2{
         font-weight: bold;
