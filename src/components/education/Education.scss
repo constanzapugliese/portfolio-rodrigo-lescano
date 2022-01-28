@@ -17,7 +17,6 @@
         justify-items: center;
         padding: 0;
         .timeLine{
-            position: relative;
             width: 558px;
             height: 25px;
         }
@@ -25,10 +24,11 @@
             display:flex; 
             flex-direction: column; 
             align-items: center;
+            position:relative;
             .pin{
                 position:absolute;
-                bottom: -323%;
                 height: 30px;
+                bottom: 115%;
             }
         }
         .sectionEducation--edContainer__title{
