@@ -8,17 +8,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
+import './Contact.scss';
 
 function Contact() {
     return (
-        <section id='contact'>
-            <h2>Contact me</h2>
-            <IoLogoWhatsapp />
-            <IoLogoLinkedin />
-            <IoLogoGithub />
-            <IoMdMail />
+        <section id='contact' className='sectionContact'>
+            <h2>CONTACT ME</h2>
+            <IoLogoWhatsapp size={'80px'}/>
+            <IoLogoLinkedin size={'80px'}/>
+            <IoLogoGithub size={'80px'}/>
+            <IoMdMail size={'80px'}/>
             <h3>Complete the form and I will contact you!</h3>
-            <Container as={Form}>
+            <Container fluid as={Form}>
                 <Row className="mb-3">
                     <Form.Group as={Col} className="mb-3" controlId="formBasicText">
                         <Form.Label>First Name</Form.Label>
@@ -42,10 +43,10 @@ function Contact() {
                     </Form.Group>
                 </Row>
                 <Row>
-                    <Button variant="primary" type="submit">Send</Button>
+                    <Button variant="primary" type="submit">SEND</Button>
                 </Row>
             </Container>
-            <p>Thank you!</p>
+            <p>THANK YOU!</p>
             {/* Animación */}
         </section>
     )
