@@ -16,13 +16,18 @@
         grid-template-rows: 0.5fr 1fr 2fr 1fr 2.5fr;
         justify-items: center;
         padding: 0;
+        .timeLine{
+            position: relative;
+            width: 558px;
+            height: 25px;
+        }
         .sectionEducation--edContainer__logo{
             display:flex; 
             flex-direction: column; 
             align-items: center;
             .pin{
                 position:absolute;
-                bottom: 46%;
+                bottom: -323%;
                 height: 30px;
             }
         }
@@ -47,11 +52,6 @@
             font-size: 22px;
             line-height: 27px;
             text-align: center;
-        }
-        .timeLine{
-            position: relative;
-            width: 558px;
-            height: 25px;
         }
         p{
             font-weight: bold;

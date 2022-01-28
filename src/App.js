@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header'
 import Home from './components/home/Home'
@@ -11,20 +11,22 @@ import Contact from './components/contact/Contact'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about-me' element={<AboutMe/>}/>
-          <Route path='/work-experience' element={<WorkExperience/>}/>
-          <Route path='/education' element={<Education/>}/>
-          <Route path='/skills' element={<Skills/>}/>
-          <Route path='/projects' element={<Projects/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
+    <div className="App">
+      <Header />
+      <div className='backgroundBlue'>
+        <div className='backgroundImage'>
+          <Home />
+          <AboutMe /> 
+        </div>
       </div>
-    </BrowserRouter>
+      <WorkExperience />
+      <Education />
+      <div className='backgroundSkills'>
+        <Skills />
+        <Projects />
+      </div>
+      <Contact />
+    </div>
   );
 }
 

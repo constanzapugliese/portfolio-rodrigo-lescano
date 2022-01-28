@@ -1,41 +1,31 @@
-.sectionHome{
-    padding-top: 18vh;
-    background: linear-gradient(180deg, #537895 0%, #09203F 100%);
-    .sectionHome--container{
-        background-image: url('../../assets/background-home.png');
-        background-repeat: no-repeat;
-        background-position-x: 54vw;
-        background-position-y: 4vh;
-        .sectionHome--container__text{
-            text-align: left;
-            width: 45vw;
-            padding-top: 16vh;
-            padding-left: 10vw;
-            display:flex;
-            flex-direction: column;
-            color:white;
-            h1{
-                font-weight: bold;
-                font-size: 60px;
-                line-height: 75px;
-            }
-            h2{
-                font-weight: normal;
-                font-size: 30px;
-                line-height: 37px;
-            }
-            p{
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 25px;
-                text-align: center;
-                margin-top: 15vh;
-            }
-            .sectionHome--container__link{
-                align-self: center;
-                animation: MoveUpDown 1s linear infinite;
-            }
-        }
+.homeContainer{
+    text-align: left;
+    width: 45vw;
+    padding-top: 16vh;
+    padding-left: 10vw;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    h1{
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    h2{
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 15vh;
+    }
+    .homeContainer--link{
+        align-self: center;
+        animation: MoveUpDown 1s linear infinite;
     }
 }
 

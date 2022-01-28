@@ -16,13 +16,16 @@
         grid-template-rows: 0.5fr 1fr 2fr 1fr 2.5fr 1fr;
         justify-items: center;
         padding: 0;
+        .timeLine{
+            position: relative;
+        }
         .sectionWorkExp--workExpContainer__logo{
             display:flex; 
             flex-direction: column; 
             align-items: center;
             .pin{
                 position:absolute;
-                bottom: 46%;
+                bottom: -192%;
                 height: 30px;
             }
         }
@@ -57,9 +60,6 @@
             font-size: 22px;
             line-height: 27px;
             text-align: center;
-        }
-        .timeLine{
-            position: relative;
         }
         p{
             font-weight: bold;

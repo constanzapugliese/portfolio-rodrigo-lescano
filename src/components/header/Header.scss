@@ -6,10 +6,23 @@
     background-color: rgba(0,0,0,0) !important;
     height: 18vh;
     z-index: 1;
+    align-items: flex-end;
     .container-fluid{
         padding-left: 0;
+        .navBar--links{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 10vw;
+            gap: 40px;
+            a{
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
     }
-    a{
+    .navBar--brand{
         font-weight: bold;
         font-size: 25px;
         line-height: 31px;
