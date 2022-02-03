@@ -1,27 +1,40 @@
+import { Modal } from "react-bootstrap";
+import './DetailsModal.scss';
+
 const DetailsModal = (props) => {
     return (
       <Modal
-        {...props}
+        show={props.showModal}
+        onHide={() => props.setShowModal(false)}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
+        scrollable
+        className='detailsModal'
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            {props.modalData?.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
+          <h4>{props.modalData?.company}</h4>
+          <p>{props.modalData?.date}</p>
+          <ul>
+            {
+              props.modalData?.responsibilities.map((x, i) => {
+                return (<li
+                  key={i}
+                >
+                  {x}
+                </li>
+                )}
+              )
+            }
+          </ul>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
       </Modal>
     );
 }
+
+export default DetailsModal;

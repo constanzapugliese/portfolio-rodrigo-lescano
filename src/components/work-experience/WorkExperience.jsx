@@ -7,9 +7,64 @@ import Sofrecom from '../../assets/work-experience/sofrecom.png';
 import FirstItem from '../../assets/work-experience/time-line/first-item.png';
 import Item from '../../assets/work-experience/time-line/item.png';
 import { Col, Container, Row } from 'react-bootstrap';
+import DetailsModal from './details-modal/DetailsModal';
 
 function WorkExperience() {
     const [showModal, setShowModal] = useState(false);
+    const [modalData, setModalData] = useState();
+
+    const openModal = (modalInfo) => {
+        setShowModal(true);
+        setModalData(modalInfo);
+    }
+
+    const exp1 = {
+        title: 'SUPPORT OF NETWORK SYSTEMS - HELP DESK - APPLICATION SUPORT',
+        company: 'Prevent Solution S.A',
+        date: 'May 2017 - September 2019',
+        responsibilities: [
+            'Tasks performed for client Government of the City of Buenos Aires and Ministry of Infrastructure of Buenos Aires.',
+            'Technologies used: SQL, Linux, MariaDB, Windows',
+            'Help desk, support access control system (Biometric control, CCTV , System alarm), Server Arming, Application Support Server, Windows Remote,Support Database analyst, Sql.',
+            'On-site support, maintenance of network equipment, wiring, infrastructural testing.',
+            'Carry out client Implementation projects.'
+        ]
+    }
+
+    const exp2 = {
+        title: 'UNIX LINUX SYSTEM ADMINISTRATOR',
+        company: 'DXC Technology',
+        date: 'April 2021 - Present',
+        responsibilities: [
+            'Manage +4000 servers located in the customer\'s data centers in USA.',
+            'Provide day-to-day support to ensure infrastructure performance on Red Hat Linux.',
+            'Schedule and perform server maintenance and patching every quarter',
+            'Manage projects and Service Requests to fix punctual issues on the servers.',
+            'Implement automation in every possible task, to sustain the entire operation.'
+        ]
+    }
+
+    const exp3 = {
+        title: 'SYSTEM ANALYST AT TELECOM',
+        company: 'Sofrecom Argentina SA',
+        date: 'September 2019 – April 2021',
+        responsibilities: [
+            'Support L2/L3 (Production)',
+            'Data Management',
+            'Operational management',
+            'Saas Applications.',
+            'Responsible for the management and execution of specific technical projects, as opposed to general management in the environment',
+            'Data analysis',
+            'Process verifications and deployments',
+            'Assist team with managing infrastructure operations',
+            'Manage complex technical projects.',
+            'Provide secondary and tertiary support for various systems used throughout the organization.',
+            'Assist the Service Desk team with level 3 support and other support issues.',
+            'Provide guidance and support with desktop imaging, deployment, maintenance, and patch management.',
+            'Create and maintain technical IT documentation.',
+            'Implement and manage monitoring systems for IT systems.'
+        ]
+    }
 
     return (
         <section className='sectionWorkExp'>
@@ -28,7 +83,7 @@ function WorkExperience() {
                             <h3>Prevent Solution S.A.</h3>
                         </div>
                         <h4>SUPPORT OF NETWORK SYSTEMS - HELP DESK -  APPLICATION SUPPORT</h4>
-                        <button>DETAILS</button>
+                        <button onClick={() => openModal(exp1)}>DETAILS</button>
                     </Col>
                     <Col className='sectionWorkExp--workExpContainer'>
                         <p>2019 - 2021</p>
@@ -42,7 +97,7 @@ function WorkExperience() {
                             <h3>Sofrecom Argentina S.A.</h3>
                         </div>
                         <h4>SYSTEM ANALYST AT TELECOM</h4>
-                        <button>DETAILS</button>
+                        <button onClick={() => openModal(exp2)}>DETAILS</button>
                     </Col>
                     <Col className='sectionWorkExp--workExpContainer'>
                         <p>2021 - Present</p>
@@ -56,10 +111,11 @@ function WorkExperience() {
                             <h3>DXC Technology</h3>
                         </div>
                         <h4>UNIX LINUX SYSTEM ADMINISTRATOR</h4>
-                        <button>DETAILS</button>
+                        <button onClick={() => openModal(exp3)}>DETAILS</button>
                     </Col>
                 </Row>
             </Container>
+            <DetailsModal modalData={modalData} showModal={showModal} setShowModal={setShowModal}/>
         </section>
     )
 }
