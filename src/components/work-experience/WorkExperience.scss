@@ -11,7 +11,7 @@
     }
     .sectionWorkExp--workExpContainer{
         max-width: 33%;
-        height: 400px;
+        height: 430px;
         display: grid;
         grid-template-rows: 0.5fr 1fr 2fr 1fr 2.5fr 1fr;
         justify-items: center;
@@ -24,7 +24,7 @@
             .pin{
                 position:absolute;
                 height: 30px;
-                bottom: 104%;
+                bottom: 110%;
             }
         }
         .sectionWorkExp--workExpContainer__title{
@@ -58,6 +58,7 @@
             font-size: 22px;
             line-height: 27px;
             text-align: center;
+            padding: 15px;
         }
         p{
             font-weight: bold;
