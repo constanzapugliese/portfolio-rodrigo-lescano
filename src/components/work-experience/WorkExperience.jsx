@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaMapPin } from 'react-icons/fa';
 import './WorkExperience.scss';
 import Dxc from '../../assets/work-experience/dxc.png';
@@ -9,6 +9,8 @@ import Item from '../../assets/work-experience/time-line/item.png';
 import { Col, Container, Row } from 'react-bootstrap';
 
 function WorkExperience() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <section className='sectionWorkExp'>
             <h2>WORK EXPERIENCES</h2>
