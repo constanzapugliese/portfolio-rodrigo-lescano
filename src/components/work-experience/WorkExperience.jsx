@@ -47,7 +47,7 @@ function WorkExperience() {
     const exp3 = {
         title: 'SYSTEM ANALYST AT TELECOM',
         company: 'Sofrecom Argentina SA',
-        date: 'September 2019 – April 2021',
+        date: 'September 2019 - April 2021',
         responsibilities: [
             'Support L2/L3 (Production)',
             'Data Management',
