@@ -68,3 +68,11 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .sectionWorkExp{
+        .sectionWorkExp--workExpContainer{
+            max-width: none;
+        }
+    }
+}

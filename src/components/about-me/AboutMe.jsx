@@ -9,10 +9,10 @@ function AboutMe() {
             <h2>ABOUT ME</h2>
             <Container fluid>
                 <Row>
-                    <Col xs={4}>
+                    <Col xs={12} lg={4} className="imageContainer">
                         <img src={ProfilePic} alt="Rodrigo Lescano"/>
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={8}>
                         <div className='sectionAbout--text'>
                             <p>
                                 I'm working as an Unix Linux Administrator.<br/>

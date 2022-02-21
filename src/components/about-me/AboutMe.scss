@@ -1,12 +1,16 @@
 .sectionAbout{
     padding-top: 18vh;
     color:white;
-    height: 100vh;
+    min-height: 100vh;
     .container-fluid{
         gap: 50px;
         padding-left: 4vw;
-        img{
-            height: 433px;
+        .imageContainer{
+            padding-top:30px;
+            img{
+                height: 330px;
+                border-radius: 20px;
+            }
         }
         .sectionAbout--text{
             width: 686px;
